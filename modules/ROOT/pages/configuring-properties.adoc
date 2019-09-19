@@ -92,6 +92,14 @@ smtp.port=8957
 http.port=8081
 ----
 
+In case you want to use the Properties Placeholder prefix (`${`) as literals of your configuration property, you can escape the value. For example: 
+[source,yaml,linenums]
+----
+some:
+	property: "The properties' placeholder prefix is: \\${"
+----
+
+
 == File Properties
 
 The placeholder value can also be the entire content of the file. The placeholder value becomes the string value, for example:
